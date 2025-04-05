@@ -6,6 +6,9 @@
     <title>Siddhi Patrange Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/180ea7982a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -74,8 +77,8 @@
         </div>
     </div>
 
-    <!--------------------------------------services-------------------------------------->
-
+<!--------------------------------------services-------------------------------------->
+<!--
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
@@ -104,7 +107,7 @@
         </div>
     </div>
 </div>
-
+-->
 <!--------------------------------------portfolio-------------------------------------->
 
 <div id="portfolio">
@@ -112,7 +115,7 @@
         <h1 class="sub-title">My Projects</h1>
         <div class="project-list">
             <div class="project">
-                <img src="images/work-1.png">
+                <img src="images/project-1.png">
                 <div class="layer">
                     <h3>Real-time Human Detection in Prohibited Areas using Neural Network</h3>
                     <p>Designed and implemented a robust system for real-time human detection using YOLOv5 and CNN, ensuring enhanced security in restricted zones. Developed video analysis features with specific triggers for suspicious activities in prohibited areas and instant alerts for human presence in strictly prohibited zones, optimizing surveillance protocols.</p>
@@ -120,7 +123,7 @@
                 </div>
             </div>
             <div class="project">
-                <img src="images/work-2.png">
+                <img src="images/project-2.png">
                 <div class="layer">
                     <h3>Eco-friendly Product Recommendation App</h3>
                     <p>Awarded Congratulatory Certificate for scoring a perfect 100/100 in 10th-grade
@@ -129,7 +132,7 @@
                 </div>
             </div>
             <div class="project">
-                <img src="images/work-3.png">
+                <img src="images/project-3.png">
                 <div class="layer">
                     <h3>Musical Instruments Website - Sarang</h3>
                     <p> Built a responsive website using React, Node.js, and JavaScript, showcasing musical instruments with features for purchase and learning resources, enhancing user engagement and accessibility through dynamic front-end development and seamless server integration.</p>
@@ -165,7 +168,7 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg">hello</span>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -173,6 +176,19 @@
         <p>Copyright @ Siddhi. Made with socks <i class="fa-solid fa-socks"></i></p>
     </div>
 </div>
+
+<script>
+    window.addEventListener('scroll', function () {
+      const nav = document.querySelector('nav');
+      const scrollY = window.scrollY;
+  
+      if (scrollY > window.innerHeight * 0.7) {  // You can tweak this threshold
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>  
 
 <script>
 
