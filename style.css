@@ -102,7 +102,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #584325;
+  color: #fff;
 }
 
 /*-----------------------------------------about----------------------------------------*/
@@ -325,6 +325,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   color: #fff;
   transition: background 0.5s;
+  margin: 50px auto;
 }
 
 .btn:hover {
@@ -440,9 +441,13 @@ nav .fa-solid {
   }
 
   .header-text {
-    margin-top: 182%;
+    margin-top: 160%;
     font-size: 18px;
-  }
+    padding: 10px;
+    background-color: rgba(179, 130, 57, 0.7);
+    border-radius: 10px;
+    color: white; /* optional, for better contrast */
+  }  
 
   .header-text h1 {
     font-size: 28px;
@@ -482,6 +487,39 @@ nav .fa-solid {
     font-size: 40px;
   }
 
+  .layer {
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#4a2f0a, rgba(0, 0, 0, 0));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 11px;
+    transition: height 0.5s;
+  }
+  
+  .layer h3 {
+    font-weight: 1000;
+    margin-bottom: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+  }
+
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
@@ -503,10 +541,46 @@ nav .fa-solid {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+    font-size: 14px;
+    margin: 30px;
+  }
+
+  .contact-left p i {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+
+  .social-icons{
+    text-align: center;
+  }
+
+  .social-icons a{
+    font-size: 20px;
+  }
+
+  .btn.btn2, form .btn2{
+      font-size: 12px;
+      padding: 14px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  form input,form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #e3c599;
+    padding: 15px;
+    margin: 15px 0;
+    color: #262626;
+    font-size: 14px;
+    border-radius: 6px;
   }
 
   .copyright {
-    font-size: 14px;
+    font-size: 10px;
+
   }
 }
 
